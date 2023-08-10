@@ -1198,7 +1198,8 @@ margin-top.px: 12
 -- end: ftd.row
 
 -- ftd.column:
-width.fixed.percent: 50
+width.fixed.percent: 20
+width.fixed.percent if { ftd.device == "mobile"}: 50
 spacing.fixed.px: 8
 margin-right.px: 48
 margin-right.px if { ftd.device == "mobile"}: 12
@@ -1224,7 +1225,6 @@ if: { work-section.endDate != NULL }
 white-space: nowrap
 
 -- end: ftd.row
-
 
 -- ftd.row:
 if: { ftd.device == "mobile"}
@@ -1268,12 +1268,13 @@ style: medium
 -- ftd.text: $work-section.summary
 if: { work-section.summary != NULL && ftd.device != "mobile" }
 role: $inherited.types.copy-small
-width.fixed.percent: 50
+width.fixed.percent: 80
 
 -- ftd.text: $work-section.summary
 if: { work-section.summary != NULL && ftd.device == "mobile" }
 role: $inherited.types.fine-print
 width.fixed.percent: 50
+
 
 -- end: ftd.row
 
