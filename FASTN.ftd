@@ -1,0 +1,21 @@
+-- import: fastn
+
+-- fastn.package: fifthtry.github.io/caffeine-resume
+download-base-url: https://raw.githubusercontent.com/fifthtry/caffeine-resume/main
+
+-- fastn.dependency: fastn-community.github.io/doc-site as ds
+-- fastn.dependency: fifthtry.github.io/resume
+
+-- fastn.auto-import: ds
+-- fastn.auto-import: fastn
+
+
+
+
+-- fastn.sitemap:
+
+# Home: /index.html
+
+
+
+
